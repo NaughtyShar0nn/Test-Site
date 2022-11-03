@@ -17,6 +17,9 @@ body {
     position: relative;
     display: block;
 }
+main{
+    position: relative;
+}
 .row{
     width: 100% !important; 
 }
@@ -34,6 +37,7 @@ body {
     font-family: couture;
 }
 .logo:hover {
+    text-decoration: none;
     cursor: pointer;
     color: whitesmoke;
     text-shadow: 0 0 10px #d2faff ;
@@ -47,6 +51,7 @@ nav li {
     font-size: 20px;
 }
 nav li a:hover {
+    text-decoration: none;
     cursor:pointer;
     color: #a53623;
 }
@@ -155,8 +160,6 @@ header div h1{
 }
 /*-----About Me-----*/
 .About{
-    padding-top: 87px;
-    margin-top: -87px;
     margin-bottom: 87px;
     width: 100%;
     min-height: 80vh;
