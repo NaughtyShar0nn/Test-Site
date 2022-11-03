@@ -1,0 +1,326 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Kanit', couture, sans-serif;
+}
+html{
+   scroll-behavior: smooth;
+}
+ @font-face {
+    font-family: couture;
+    src: url(../fonts/couture-bld.otf);
+ }
+
+body {
+    background-color: #111111;
+    position: relative;
+    display: block;
+}
+/*-----Navigation bar-----*/
+.nav-bar a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.logo {
+    padding: 23px 0px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: couture;
+}
+.logo:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    text-shadow: 0 0 10px #d2faff ;
+}
+nav li {
+    text-decoration: none;
+    list-style: none;
+    margin: 15px 5px;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav li a:hover {
+    cursor:pointer;
+    color: #a53623;
+}
+.containner {
+    margin: 0 auto;
+    position: relative;
+}
+.nav-bar{
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    box-shadow: 0.5px 0.5px 10px black;
+}
+.nav-scroll{
+    background-color: #343434;
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    transition: transform .5s;
+    transition: transform .5s;
+    transform: translateY(100px);
+}
+nav ul{
+    display: flex;
+    margin: 0px;
+    padding-left: auto;
+}
+.nav-item{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nav-toggle{
+    font-size: 30px;
+    display: none;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.nav-toggle:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #d2faff ;
+}
+.show{
+    display: flex;
+}
+/*-----Header-----*/
+.header{
+    position:relative;
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url(img/Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px 10px #000000;
+}
+header div h2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+header div h1{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline;
+}
+.Nijipont{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #a53623;
+    display: inline;
+}
+.header .btn{
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #101010;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.header .btn:hover{
+    background-color: whitesmoke;
+    color: #a53623;
+}
+/*-----About Me-----*/
+.About{
+    padding-top: 87px;
+    margin-top: -87px;
+    margin-bottom: 87px;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #101010;
+}
+.info-header{
+    text-align:start;
+    color: whitesmoke;
+    padding: 20px;
+}
+.info-header h2{
+    text-align: center;
+    margin: 5px;
+    font-family: couture;
+    padding: 10px;
+    background-color: #a53623;
+    box-shadow: 0px 0px 10px  #101010;
+}
+.info-header h4{
+    margin: 20px 10px 10px 10px;
+    color: #afafaf;
+    background-color: #303030;
+    width: max-content;
+    padding: 10px;
+    border-radius: 25px;
+}
+.info-header ul{
+    display: inline-block;
+    width: 100%;
+    font-size: 22px;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+.info-header  ul li{
+    padding: 10px;
+}
+.info-header ul li h6{
+    display: inline-block;
+    justify-content: space-between;
+}
+.skill-progress{
+    height: 8px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+}
+.skill-progress .progres{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #a53623;
+    transition: all 1.5s;
+}
+.skill-progress .progres:after{
+    content: attr(data-value);
+    position: absolute;
+    top: -15px;
+    right: 0;
+    font-size: 10px;
+}
+.Hero{
+    background-image: url(img/Pfp1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Education{
+    color: whitesmoke;
+    padding: 20px;
+    height: 100%;
+}
+.Education h6{
+    padding: 15px 0px;
+    margin: 8px 0px;
+}
+.Education h4{
+    color: #afafaf;
+    background-color: #303030;
+    width: max-content;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px 0px;
+}
+.Education ul li .icon{
+    background-color: #a53623;
+    width: 100%;
+    text-align: start;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.Education ul li .icon span{ 
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+}
+/*-----Portfolio-----*/
+.Portfolio{
+    padding-top: 87px;
+    margin-top: -87px;
+    background-color: #202020;
+    min-height: 100vh;
+    width: 100%;
+}
+.Port-header{
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+.Port-header h2{
+    width: max-content;
+    margin: 0 auto;
+    font-family: couture;
+    padding: 10px 50px;
+    background-color: #a53623;
+    box-shadow: 0px 0px 10px  #101010;
+}
+.Port-item{
+    padding: 15px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.Port-item .Port-item-inner{
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px;
+}
+.Port-item .Port-item-inner .Port-img img{
+   width: 100%;
+   display: block;
+   border-radius: 15px;
+   box-shadow: 0px 0px 10px  #101010;
+}
+
+
+/*-----Contact-----*/
+.Contact{
+    background-color: darkorange;
+    min-height: 100vh;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .nav-toggle{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        background-color: #303030;
+        margin-top: 350px;
+        overflow: hidden;
+        display: none;
+        z-index: 9;
+        box-shadow: 0.5px 0.5px 10px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+    }
+}
