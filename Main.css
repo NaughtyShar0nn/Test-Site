@@ -17,6 +17,9 @@ body {
     position: relative;
     display: block;
 }
+.row{
+    width: 100% !important; 
+}
 /*-----Navigation bar-----*/
 .nav-bar a{
     text-decoration: none;
